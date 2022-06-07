@@ -12,7 +12,7 @@
         <form class="container-fluid justify-content-start">
 
           <button class="btn btn-outline-success me-2" type="button">Fazer um Exame</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button">Ver Perguntas</button>
+         <a href="./exames" class="btn btn-outline-primry">Ver exames </a>
         </form>
       </nav>
 

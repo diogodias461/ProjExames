@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('exames.index');
 });
+
+
+//show
+Route::get('/exames',[\App\Http\Controllers\perguntaController::class,'perguntaController@index']);
+Route::get('/exames/{Perguntas}',[\App\Http\Controllers\perguntaController::class,'show']);
+
+//create
+//Route::get('/exames',[\App\Http\Controllers\perguntaController::class,'create']);
+//Route::get('/exames',[\App\Http\Controllers\perguntaController::class,'store']);
+
+
