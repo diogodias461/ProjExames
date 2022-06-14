@@ -14,7 +14,9 @@ class respostaController extends Controller
      */
     public function index()
     {
-        //
+        $resposta=resposta::all();
+        return view('exames.respostas.indexResposta',['respostas'=>$resposta]);
+
     }
 
     /**
@@ -25,6 +27,7 @@ class respostaController extends Controller
     public function create()
     {
         //
+        return view('exames.respostas.createResposta');
     }
 
     /**
@@ -36,6 +39,8 @@ class respostaController extends Controller
     public function store(Request $request)
     {
         //
+        $newResposta=Resposta::create(['corporesposta'=>$request->corporesposta]);
+        return redirect('/');
     }
 
     /**

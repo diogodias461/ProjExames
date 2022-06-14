@@ -3,7 +3,7 @@
 
 <div class="container">
         <div class="row">
-            <a href="/exames" class="btn btn-outline-primary">Voltar!</a>
+            <a href="/" class="btn btn-outline-primary">Voltar!</a>
             <div class="border rounded">
                 <h1>Criar uma pregunta</h1>
                     <hr>

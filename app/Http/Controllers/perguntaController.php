@@ -16,9 +16,9 @@ class perguntaController extends Controller
     {
         //
          //
-         $pergunta=Pergunta::all();
-         //return $post;
+         $pergunta=pergunta::all();
          return view('exames.index',['perguntas'=>$pergunta]);
+
     }
 
     /**
@@ -30,6 +30,7 @@ class perguntaController extends Controller
     {
         //
         return view('exames.perguntas.createPregunta');
+
     }
 
     /**
@@ -42,7 +43,7 @@ class perguntaController extends Controller
     {
         //
         $newPergunta=Pergunta::create(['corpopregunta'=>$request->corpopregunta]);
-        return redirect('exames/'.$newPergunta->id);
+        return redirect('/');
     }
 
     /**
@@ -54,6 +55,7 @@ class perguntaController extends Controller
     public function show(pergunta $pergunta)
     {
         //
+        return view('exames.perguntas.showPergunta',['perguntas'=>$pergunta]);
     }
 
     /**

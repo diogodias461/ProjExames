@@ -12,9 +12,12 @@
         <form class="container-fluid justify-content-start">
 
           <button class="btn btn-outline-success me-2" type="button">Fazer um Exame</button>
-         <a href="./exames" class="btn btn-outline-primry">Ver exames </a>
+         <a href="{{route('exames.create')}}" class="btn btn-outline-primry">Criar uma Pergunta </a>
+         <a href="{{route('examesResposta.create')}}" class="btn btn-outline-primry">Criar uma Resposta </a>
         </form>
       </nav>
+
+      <h1> Bem Vindo </h1>
 
 
 
