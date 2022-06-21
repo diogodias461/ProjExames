@@ -67,6 +67,7 @@ class perguntaController extends Controller
     public function edit(pergunta $pergunta)
     {
         //
+        return view('exames.pergunta.editResposta',['pergunta'=>$pergunta]);
     }
 
     /**

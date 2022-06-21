@@ -11,9 +11,12 @@
     <nav class="navbar bg-light">
         <form class="container-fluid justify-content-start">
 
-          <button class="btn btn-outline-success me-2" type="button">Fazer um Exame</button>
+        <a href="{{route('fazerExame.index')}}" class="btn btn-outline-primary"> Fazer Exame </a>
          <a href="{{route('exames.create')}}" class="btn btn-outline-primry">Criar uma Pergunta </a>
          <a href="{{route('examesResposta.create')}}" class="btn btn-outline-primry">Criar uma Resposta </a>
+
+
+
         </form>
       </nav>
 

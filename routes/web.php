@@ -34,7 +34,11 @@ Route::get('/resposta/{Respostas}',[\App\Http\Controllers\respostaController::cl
 
 //createReposta
 Route::get('/resposta',[\App\Http\Controllers\respostaController::class,'create'])->name('examesResposta.create');
-    Route::post('/resposta',[\App\Http\Controllers\respostaController::class,'store']);
+Route::post('/resposta',[\App\Http\Controllers\respostaController::class,'store']);
+
+//fazerExame
+Route::get('/fazerExame',[\App\Http\Controllers\exameController::class,'teste'])->name('fazerExame.index');
+
 
 
 

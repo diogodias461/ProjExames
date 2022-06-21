@@ -3,14 +3,14 @@
     <div class="container">
         <div class="row">
         <div class="col-4">
-            <a href="/exames/perguntas/create/pergunta" class="btn btn-primary">Criar Pergunta  </a>
+            <a href="/exames/create/resposta" class="btn btn-primary">Criar Resposta </a>
         </div>
-        @forelse ( $perguntas as $pergunta )
+        @forelse ( $respostas as $resposta )
             <ul>
-                <li><a href="./exames/perguntas/{{$pergunta->id}}">{{($pergunta->corpopergunta)}}</a></li>
+                <li><a href="./exame/{{$resposta->id}}">{{($resposta->corporesposta)}}</a></li>
             </ul>
         @empty
-        <p class="txt-warning">Sem Perguntas Registadas </p>
+        <p class="txt-warning">Sem Respostas Registados </p>
 
         @endforelse
         </div>
